@@ -14,7 +14,10 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "start": "bun run index.ts",
+    "start:backend": "bun run ./backend/index.ts",
+    "start:frontend": "bun run ./frontend/index.ts",
+    "build:backend": "bun build ./backend/index.tsx --outdir ./build/backend",
+    "build:frontend": "bun build ./frontent/index.tsx --outdir ./build/frontend",
     "lint": "eslint . --fix --max-warnings=0",
     "format": "prettier . --cache --write"
   },
