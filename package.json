@@ -1,0 +1,25 @@
+{
+  "name": "lets-try-bun",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "bun run index.ts",
+    "lint": "eslint . --fix --max-warnings=0",
+    "format": "prettier . --write"
+  },
+  "lint-staged": {
+    "*.js": "npm run lint",
+    "*.{js,css,md,html,json}": "npm run format"
+  }
+}
