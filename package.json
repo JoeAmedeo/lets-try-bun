@@ -16,7 +16,7 @@
   "scripts": {
     "start": "bun run index.ts",
     "lint": "eslint . --fix --max-warnings=0",
-    "format": "prettier . --write"
+    "format": "prettier . --cache --write"
   },
   "lint-staged": {
     "*.js": "npm run lint",
